@@ -24,6 +24,11 @@ function greet(name) {
 const timeoutID = setTimeout(greet, 2000, 'lili');
 clearTimeout(timeoutID )
 
+setTimeout(function run(name) {
+    console.log(`hello ${name}`)
+    setTimeout(run, 1000, 'Rosita')
+}, 1000, 'Rosi')
+
 //setInterval()
 //setInterval(function, duration, param1, param2, ...)
 
