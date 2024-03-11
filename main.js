@@ -64,3 +64,23 @@ function curry(fn) {
 
 const curriedSum = curry(sum)
 console.log("curriedSum =>", curriedSum(2)(3)(5))
+
+
+//this keyword
+// how to determine 'this'?
+
+//1- implicit binding
+//2- explicit binding
+//3- new binding
+//4-  default binding
+
+
+//prototype
+//prototype inheritarne
+
+//class
+
+//iterables & iterators - Protocols
+
+//generators
+
