@@ -58,3 +58,12 @@ greeting(greet);
 
 // any function that is passed as an argument to another function is called a callback function in js
 //the function which accepts a function as an argument or return a funcrion is called a higher order function
+
+
+//callback function types
+//1- synchronouse callback: executed immediatly *sort *map *filter
+//2- asynchronouse callback: use to continue or resume code execution after as asynchronous operation has completed
+   // used to delay the execution of a function until a particular time or event has occured
+   //*datafetching *setTimeout() (as ahigher order function) *eventhandels
+
+   //callbacks problem is getting Callback hell, promisses come to help
