@@ -62,8 +62,48 @@ greeting(greet);
 
 //callback function types
 //1- synchronouse callback: executed immediatly *sort *map *filter
-//2- asynchronouse callback: use to continue or resume code execution after as asynchronous operation has completed
+//2- asynchronouse callback: after some time has passed. some event has occured or some data has been fetched
    // used to delay the execution of a function until a particular time or event has occured
    //*datafetching *setTimeout() (as ahigher order function) *eventhandels
 
-   //callbacks problem is getting Callback hell, promisses come to help
+   //callbacks problem is getting Callback hell, Promisses come to help
+
+   //Promises: an object in javaScript
+   //a promise is always in one of the three state
+   //1- pending : initial state, neither fulfilledd nor rejected
+   //2- fulfilleed: operation completed successfully
+   //3- rejected: operation failed
+
+   //why use Promise?
+   // promise helps deal with asynchronouse code in a far more simpler way compare to callback
+   // callback hell can be avoided with Promises
+
+
+   //async await
+//    async function greet() {
+//     return (
+//         console.log("ASYNC GREET FUNCTION")
+//     )
+//    }
+
+//    greet()
+
+async function greet() {
+    return Promise.resolve("ASYNC FUNCTION")
+}
+
+greet()
+.then((value) => console.log(value))
+.catch((error) => console.log("async error =>", error))
+
+
+//sync await
+// async function fetchdata() {
+//     try {
+//         const users = await fetchUsers('api/users/...')
+//         const description = await fetchDescription('api/users/Descrip/...')
+//         console.log("DISPLAY DAT =>", result)
+//     } catch (error) {
+//         console.log("Display Error =>", error)
+//     }
+// }
